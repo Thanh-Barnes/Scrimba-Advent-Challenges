@@ -119,3 +119,5 @@ function countVowelConsonant(str) {
 }
 countVowelConsonant("abcde") // 8
 
+// 8. rolling dice - 
+console.log('refer to challenge 8 folder')

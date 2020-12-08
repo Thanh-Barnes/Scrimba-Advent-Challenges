@@ -1,0 +1,132 @@
+body {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 2.5em;
+    font-family: 'Redressed', cursive;
+    color: yellow;
+    text-align: center;
+}
+
+.instructions {
+    font-size: 0.8em;
+    margin-bottom: 1em;
+}
+
+.diceResult {
+    font-family: 'Redressed', cursive;
+    font-size: 8em;
+    margin-top: 0.2em;
+    color: yellow;
+}
+
+.dice {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 7px 10px grey;
+}
+
+/* middle */
+.dot1 {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: white;
+    margin: 35px;  
+    position: absolute; 
+}
+
+/* top left */
+.dot2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: white;
+    margin: 7.5px;  
+}
+
+
+/* middle left */
+.dot3 {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: white;
+    margin: 7.5px;   
+}
+
+/* bottom left */
+.dot4 {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: white;
+    margin: 7.5px;   
+}
+
+/* middle top */
+.dot5 {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: white;
+    margin: 35px;
+    margin-top: -82.5px;   
+}
+
+/* bottom middle */
+.dot6 {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: white;
+    margin: 35px;   
+} 
+
+/* top right */
+.dot7 {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: white;
+    margin: 35px;  
+    margin-top: -110px; 
+    margin-left: 62px;
+}
+
+/* bottom right */
+.dot8 {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: white;
+    margin: 35px; 
+    margin-top: 0px; 
+    margin-left: 62px;
+} 
+
+/* middle right */
+.dot9 {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background-color:white;
+    margin: 35px;  
+    margin-top: -83px; 
+    margin-left: 62px; 
+}
+
+
+.hide {
+    background-color: white;
+}
+
+.show {
+    background-color: black;
+}
