@@ -189,10 +189,40 @@ function avoidObstacles(nums) {
 }
 avoidObstacles([5, 3, 6, 7, 9]) // 4
 
+// 12 - valid time - check if the given string is a correct time representation of the 24-hour clock
+function validTime(str) {
+    let arr = str.split(":")
+    let hr = parseInt(arr[0]);
+    let mins = parseInt(arr[1]);
+    
+    if (hr >= 0 && hr < 24) {
+        if (mins >= 0 && mins <= 60) {
+            return true;
+        } else {
+            return false;
+        }
+    } else {
+        return false;
+    }     
 
+    // alternative method per Scrimba
+    // const [hours, minutes] = str.split(":");
 
+    // if (parseInt(hours) > 23 || parseInt(hours) < 0) {
+    //     return false;
+    // }
 
+    // if (parseInt(minutes) > 59 || parseInt(minutes) < 0) {
+    //     return false;
+    // }
 
+    // return true;
+}
+validTime('13:58') // true
+validTime('25:51') // false
+validTime('02:76') // false
+
+        
 
 
 
