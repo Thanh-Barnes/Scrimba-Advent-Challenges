@@ -222,8 +222,12 @@ validTime('13:58') // true
 validTime('25:51') // false
 validTime('02:76') // false
 
-        
-
+// 13 - extract each kth - given array of integers, remove each kth element from it
+function extractEachKth(nums, index) {
+    const remainingNums = nums.filter(nums => nums % index)
+    return remainingNums;
+}
+extractEachKth([1, 2, 3, 4, 5, 6 ,7, 8, 9, 10], 3) // [1, 2, 4, 5, 7, 8, 10]
 
 
 
