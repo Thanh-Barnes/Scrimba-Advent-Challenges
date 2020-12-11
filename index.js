@@ -145,8 +145,49 @@ function sumOddFibonacciNumbers(num) {
 // sumOddFibonacciNumbers(10) // 10
 // sumOddFibonacciNumbers(1000) // 1785
 
+// 10. adjacent elements product - given array of integers, find the pair of adjacent elements that has the largest (multiply) and return product
+function adjacentElementsProduct(num) {
+    let productArr = [];
+    
+    for (let i = 0; i < num.length-1; i++) {
+        let firstNum = num[i];
+        let secondNum = num[i + 1];
 
+        let productTwoNum = firstNum * secondNum;
+        productArr.push(productTwoNum);
+    }
+    productArr.sort();
+    return productArr[productArr.length-1];
 
+}
+adjacentElementsProduct([3, 6, -2, -5, 7, 3]) // 21 which is 7 * 3
+
+// 11. avoid obstables
+function avoidObstacles(nums) {
+    nums.sort();
+
+    let highestNum = nums[nums.length - 1] + 1; // add 1 to jump over last num in array
+    let minJump = 2; // cannot be 1 because would land on all num
+    const isMinJump = (arrayVal) => (arrayVal % minJump) > 0;
+
+    for (let i = minJump; i < highestNum; i++) {
+        if(nums.every(isMinJump)) {
+            return minJump;
+        }
+        else {
+            minJump++;
+        }
+    }  
+
+    //alternative answer
+    // const largestNum = sums.sort((a, b) => a-b) [nums.length-1];
+    // for (let i = 1; i <= largestNum _ 1; i++) {
+    //     if (nums.every((value) => value % i !== 0)) {
+    //         return i;
+    //     }
+    // }
+}
+avoidObstacles([5, 3, 6, 7, 9]) // 4
 
 
 
