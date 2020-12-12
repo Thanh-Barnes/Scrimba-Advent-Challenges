@@ -229,6 +229,22 @@ function extractEachKth(nums, index) {
 }
 extractEachKth([1, 2, 3, 4, 5, 6 ,7, 8, 9, 10], 3) // [1, 2, 4, 5, 7, 8, 10]
 
+// 14 - maximal adjacent difference - given an array of integers, find the maximal absolute difference between any two of its adjacent elements
+function arrayMaximalAdjacentDifference(nums) {
+
+    let maxDiff = 0;
+
+    for (let i = 0; i < nums.length; i++) {
+        let diff = Math.abs(nums[i] - nums[i + 1]);
+
+        if (maxDiff < diff) {
+            maxDiff = diff;
+        }
+    }
+    return maxDiff;
+}
+arrayMaximalAdjacentDifference([2, 4, 1, 0]) // 3
+arrayMaximalAdjacentDifference([2, 9, 1, 0]) // 8
 
 
 
