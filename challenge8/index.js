@@ -13,11 +13,13 @@ event listeners, Math.random()
 const dice = document.querySelector(".dice");
 const middle = document.querySelector(".dot1");
 const topLeft = document.querySelector(".dot2");
+// const middleLeft = document.querySelector(".dot3");
 const bottomLeft = document.querySelector(".dot4");
 const topMiddle = document.querySelector(".dot5");
 const bottomMiddle = document.querySelector(".dot6");
 const topRight = document.querySelector(".dot7");
 const bottomRight = document.querySelector(".dot8");
+// const middleRight = document.querySelector(".dot9")
 
 const dots = document.querySelectorAll(".dots");
 const diceResult = document.querySelector('.diceResult');

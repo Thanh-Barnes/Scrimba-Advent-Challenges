@@ -246,6 +246,10 @@ function arrayMaximalAdjacentDifference(nums) {
 arrayMaximalAdjacentDifference([2, 4, 1, 0]) // 3
 arrayMaximalAdjacentDifference([2, 9, 1, 0]) // 8
 
+// 15 - carousel is separate folder
+
+// 16 - insert dashes - transform a given sentence into a new one with dashes between each two consecutive letters
+// e.g "aba caba" = "a-b-a c-a-b-a"
 
 
 
