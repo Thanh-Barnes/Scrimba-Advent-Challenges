@@ -249,10 +249,18 @@ arrayMaximalAdjacentDifference([2, 9, 1, 0]) // 8
 // 15 - carousel is separate folder
 
 // 16 - insert dashes - transform a given sentence into a new one with dashes between each two consecutive letters
-// e.g "aba caba" = "a-b-a c-a-b-a"
+function insertDashes(str) {
+    let splitStr = str.split(" ");
+    let dashedStrArr = [];
+    
+    for (let i = 0; i < splitStr.length; i++) {
+        let splitAgain = splitStr[i].split("");
+        dashedStrArr.push(splitAgain.join("-"));
+    }    
+    return dashedStrArr.join(" ");
+}
 
-
-
+insertDashes("aba caba") // "a-b-a c-a-b-a"
 
 
 
